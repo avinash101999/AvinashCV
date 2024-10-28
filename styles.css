@@ -1,0 +1,341 @@
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f1f1f, #121212);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.profile-section {
+    width: 300px;
+    background: #1f1f1f;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.profile h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+.profile p {
+    font-size: 1rem;
+    color: #bbb;
+    text-align: center;
+}
+.social-icons {
+    margin: 20px 0;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #ff6347;
+}
+.btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #ff4500;
+}
+.content-section {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+}
+.emoji-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.emoji-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.emoji-nav ul li {
+    margin: 10px 0;
+    position: relative;
+}
+.emoji-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.emoji-nav ul li a:hover {
+    background: #333;
+}
+.emoji-nav ul li a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.emoji-nav ul li a:hover::after {
+    opacity: 1;
+}
+section {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f1f1f, #121212);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.profile-section {
+    width: 300px;
+    background: #1f1f1f;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.profile h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+.profile p {
+    font-size: 1rem;
+    color: #bbb;
+    text-align: center;
+}
+.social-icons {
+    margin: 20px 0;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #ff6347;
+}
+.btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #ff4500;
+}
+.content-section {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+}
+.emoji-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.emoji-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.emoji-nav ul li {
+    margin: 10px 0;
+    position: relative;
+}
+.emoji-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.emoji-nav ul li a:hover {
+    background: #333;
+}
+.emoji-nav ul li a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.emoji-nav ul li a:hover::after {
+    opacity: 1;
+}
+section {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+section ul {
+    list-style: none;
+    padding: 0;
+}
+section ul li {
+    background: #1f1f1f;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .profile-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content-section {
+        padding: 20px;
+    }
+    .emoji-nav {
+        right: 10px;
+        top: auto;
+        bottom: 10px;
+        transform: none;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .profile img {
+        width: 80px;
+    }
+    .profile h1 {
+        font-size: 1.2rem;
+    }
+    .profile p {
+        font-size: 0.8rem;
+    }
+    .emoji-nav ul li a {
+        font-size: 1.2rem;
+    }
+    .content-section {
+        padding: 10px;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+    section p, section ul {
+        font-size: 0.9rem;
+    }
+}
+
