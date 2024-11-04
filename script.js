@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
+            document.getElementById('profile-section').classList.add('funct')
+            document.getElementById('profile-section').classList.remove('hide')
             const targetId = link.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
             targetElement.scrollIntoView({ behavior: 'smooth' });
@@ -36,3 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Activate the first section by default
     activateSection('home');
 });
+
+// // document.getElementById('toggelButton').addEventListener('click',()=>{
+// //     document.getElementById('profile').style.display='none'
+// // })
+
+function toggleButton(){
+    // document.getElementById('profile-section').classList.toggle('show') 
+    document.getElementById('profile-section').classList.remove('funct')
+    document.getElementById('profile-section').classList.toggle('hide') 
+}
